@@ -208,7 +208,7 @@ class loginController extends Controller
 
     function get_news() {
 
-        $response = Http::get('http://newsapi.org/v2/everything?q=tesla&from=2023-05-28&sortBy=publishedAt&apiKey=8d2dd37b80b14750a622c3bf953599b2');
+        $response = Http::get('http://newsapi.org/v2/everything?q=tesla&from=2023-05-29&sortBy=publishedAt&apiKey=8d2dd37b80b14750a622c3bf953599b2');
         $responseBody = json_decode($response->getBody(), true);
 
         $onlyArticles = $responseBody['articles'];
